@@ -48,4 +48,4 @@
   and you don’t want to get stuck writing a commit message in Vim because you accidentally used 
   git commit without the message flag (-m), this command will make Visual Studio Code open a new tab 
   with the ability to write your commit message and an optional description below it: 
-  
+  git config --global core.editor "code --wait"
