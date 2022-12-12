@@ -1,0 +1,51 @@
+  100  cat official-package-repositories.list 
+  102  sudo apt install git
+  103  sudo add-apt-repository ppa:git-core/ppa
+  104  sudo apt update
+  105  sudo apt install git
+  107  cat git-core-ppa-jammy.list 
+  108  git --version
+
+    GIT first time config:
+    Set local user and github email user
+  110  git config --global user.name "ark214"
+  111  git config --global user.email "ahmed.riaz.khan@outlook.com"
+    
+    Change name for branch from master to main
+  112  git config --global init.defaultBranch main
+    
+    Set color
+  113  git config --global color.ui auto
+    
+    ???
+  114  git config --global pull.rebase false
+  115  git config --get user.name
+  116  git config --get user.email
+
+    #Generate SSH file with this type
+  127  ssh-keygen -t ed25519 -C ahmed.riaz.khan@outlook.com
+  129  cat id_ed25519.pub 
+  131  ssh -T git@github.com
+
+    Download repo
+  137  git clone git@github.com:ark214/git_test.git  (git clone git@github.com:USER-NAME/REPOSITORY-NAME.git)
+
+    Show remote repo URL
+  141  git remote -v
+
+
+  147  git status --------------------------------------------- status (modified, staging, committed)
+  148  git add hellow_orld.txt -------------------------------- add to staging area
+  150  git commit -m "Add hellow_orld.txt" -------------------- commit change locally (with comments/description)
+  152  git log
+  153  code .
+  158  git add .
+  160  git commit -m "Edit README.md and hellow_orld.txt"
+  163  git push origin main OR git push (if you only have main branch). This is to push/upload your changes to github
+
+  Consider atomic commits
+  If you are using Visual Studio Code (and you should be if you’re following this curriculum) 
+  and you don’t want to get stuck writing a commit message in Vim because you accidentally used 
+  git commit without the message flag (-m), this command will make Visual Studio Code open a new tab 
+  with the ability to write your commit message and an optional description below it: 
+  git config --global core.editor "code --wait".
