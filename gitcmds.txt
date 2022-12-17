@@ -33,7 +33,6 @@
     Show remote repo URL
   141  git remote -v
 
-
   147  git status --------------------------------------------- status (modified, staging, committed)
   148  git add hellow_orld.txt -------------------------------- add to staging area
   150  git commit -m "Add hellow_orld.txt" -------------------- commit change locally (with comments/description)
@@ -49,3 +48,7 @@
   git commit without the message flag (-m), this command will make Visual Studio Code open a new tab 
   with the ability to write your commit message and an optional description below it: 
   git config --global core.editor "code --wait"
+
+  ##################ADDING AN ORIGIN BY MISTAKE###################
+  git remote set-url origin git://new.url.here  -----> set new URL for remote origin
+  git remote remove origin --------------> Or instead, you can remove origin using this and then re-add the new origin
