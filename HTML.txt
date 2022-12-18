@@ -17,3 +17,14 @@ indent and child element by two spaces.
 <em> put emphasis to change meaning 
 <i> TO convey alternate voice/mood
 <b> Bold. least semantic
+
+FILE STRUCTURE:
+-To keep a standard, name all files and directories lowercase. index.html should also be
+lower always, otherwise when you upload it to the internet it will not work (it will not
+be considered the homepage of your website)
+
+-Avoid spaces as well (page two.html will appear as page%two.html in the URL which can 
+cause some problems on the server. % is the symbol for space)
+
+-To navigate up through multiple directories, use multiple .. references, like so:
+../../elsewhere.html
