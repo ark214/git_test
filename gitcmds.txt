@@ -52,3 +52,6 @@
   ##################ADDING AN ORIGIN BY MISTAKE###################
   git remote set-url origin git://new.url.here  -----> set new URL for remote origin
   git remote remove origin --------------> Or instead, you can remove origin using this and then re-add the new origin
+
+  ########## SYNCING WITH UPSTREAM REPO AFTER FORK ###############
+  git remote add upstream git@github.com:TheOdinProject/css-exercises.git
